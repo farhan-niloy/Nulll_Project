@@ -1,6 +1,8 @@
+
 ---
-import HeaderLink from './HeaderLink.astro';
-import { HOMEPAGE_URL } from '../consts';
+import HeaderLink from './HeaderLink.astro'
+import { HOMEPAGE_URL } from '../consts'
+import ThemeToggle from './ThemeToggleButton'
 import {IoLogoGithub} from 'react-icons/io5/index.js'
 ---
 
@@ -14,9 +16,9 @@ import {IoLogoGithub} from 'react-icons/io5/index.js'
     <HeaderLink href={HOMEPAGE_URL}>About</HeaderLink>
     <HeaderLink href="https://github.com/withastro/astro" target="_blank"><IoLogoGithub/>Source</HeaderLink>
      </div>
+    <ThemeToggle client:load/>
 	</nav>
     </div>
     <div class="flex-1">
     </div>
 </header>
-
